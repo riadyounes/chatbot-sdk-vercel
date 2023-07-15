@@ -1,8 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chat Bot utilizando Inteligência Artificial
 
-## Getting Started
+Este é um projeto de chat bot que utiliza inteligência artificial para responder perguntas. O bot foi desenvolvido usando a SDK (Software Development Kit) da Vercel.
 
-First, run the development server:
+## Configuração
+
+Siga as etapas abaixo para configurar o projeto:
+
+1. Clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/riadyounes/chatbot-sdk-vercel.git
+#ou
+git clone git@github.com:riadyounes/chatbot-sdk-vercel.git
+```
+
+2. Na raiz do projeto, crie um arquivo .env para configurar as variáveis de ambiente necessárias. Adicione a seguinte linha ao arquivo:
+
+```bash
+OPEN_API_KEY=SUA_CHAVE_AQUI
+```
+
+Substitua SUA_CHAVE_AQUI pela sua chave de API do serviço de inteligência artificial que você está usando para fornecer respostas ao chat bot. Certifique-se de ter uma chave válida e com permissões adequadas.
+
+3. Instale as dependências do projeto:
+
+```bash
+npm install
+#ou
+yarn install
+```
+
+4. Inicie o servidor localmente:
 
 ```bash
 npm run dev
@@ -12,23 +40,12 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Uso
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Após configurar e iniciar o chat bot localmente, você poderá fazer perguntas e receber respostas do bot. Experimente interagir com ele digitando perguntas no campo de entrada e pressionando "Enviar".
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contato
 
-## Learn More
+Se você tiver alguma dúvida ou sugestão sobre este projeto, sinta-se à vontade para entrar em contato comigo através do meu perfil do GitHub ou pelo meu endereço de e-mail.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Espero que este projeto seja útil e aproveite a experiência de interagir com o chat bot!
