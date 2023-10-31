@@ -1,6 +1,8 @@
 "use client";
 
 import { useChat } from "ai/react";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Button } from "./ui/button";
 import {
   Card,
   CardContent,
@@ -9,16 +11,16 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { AvatarFallback, Avatar, AvatarImage } from "./ui/avatar";
 import { Input } from "./ui/input";
-import { Button } from "./ui/button";
 import { ScrollArea } from "./ui/scroll-area";
 
 export function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
 
+  // console.log(messages);
+
   return (
-    <Card className="w-[440px] bg-gray-700 border-none ">
+    <Card className="w-[500px] bg-gray-700 border-none ">
       <CardHeader>
         <CardTitle className="text-gray-300 selection:">Chat AI</CardTitle>
         <CardDescription className="text-gray-400 ">
